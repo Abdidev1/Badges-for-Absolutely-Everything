@@ -1,0 +1,26 @@
+{
+  "name": "RobloxGame",
+  "tree": {
+    "$className": "DataModel",
+
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "Badges": {
+        "$path": "src/ServerScriptService/Badges"
+      },
+      "Leaderboard": {
+        "$path": "src/ServerScriptService/Leaderboard"
+      }
+    },
+
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "$path": "src/StarterPlayer"
+    },
+
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "$path": "src/ReplicatedStorage"
+    }
+  }
+}
