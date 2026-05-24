@@ -1,4 +1,4 @@
-# Badges for Absolutely Everything 🎮
+# Badges for Absolutely Everything 
 
 A simple Roblox project managed with Rojo where players get badges for doing basically nothing. Mostly a project to practice Luau scripting, Rojo syncing, and saving data.
 
@@ -9,7 +9,7 @@ A simple Roblox project managed with Rojo where players get badges for doing bas
 * `assets/` - Local backups of `.rbxm` and `.gltf` files (Classic House, map walls, spawn locations, audio).
 * `default.project.json` - Rojo configuration for syncing code into Studio.
 
-## 🏅 Badges Included
+##  Badges Included
 
 | Script | Badge Name | Requirement |
 | :--- | :--- | :--- |
@@ -27,7 +27,7 @@ The `PlaytimeLeaderboard.server.luau` script handles player stats:
 * **Leaderstat:** `Playtime` (Tracks lifetime minutes)
 * **Save Logic:** Autosaves every 60 seconds and saves when a player leaves the server.
 
-## 🚀 How to Run
+##  How to Run
 
 1. Clone the repo.
 2. If you use Aftman, run `aftman install`.
