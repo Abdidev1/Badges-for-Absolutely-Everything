@@ -1,61 +1,37 @@
-🎮 Badges for Absolutely EverythingA Roblox game built using Rojo where players earn badges for doing literally anything, from joining the server to just standing still. This repository contains the source code, server scripts, and tracked assets.📁 Project Structure.
+# Badges for Absolutely Everything 🎮
 
-├── src/
+A simple Roblox project managed with Rojo where players get badges for doing basically nothing. Mostly a project to practice Luau scripting, Rojo syncing, and saving data.
 
-│   ├── ServerScriptService/
+## 📁 Project Structure
 
-│   │   ├── Badges/                   # Server-side badge awarding logic
+* `src/ServerScriptService/Badges/` - Holds all individual server scripts for badge triggers.
+* `src/ServerScriptService/Leaderboard/` - Contains the playtime data saving system.
+* `assets/` - Local backups of `.rbxm` and `.gltf` files (Classic House, map walls, spawn locations, audio).
+* `default.project.json` - Rojo configuration for syncing code into Studio.
 
-│   │   │   ├── WelcomeBadge.server.luau
+## 🏅 Badges Included
 
-│   │   │   ├── Badge_1Second.server.luau
+| Script | Badge Name | Requirement |
+| :--- | :--- | :--- |
+| `WelcomeBadge.server.luau` | Welcome | Join the game |
+| `Badge_1Second.server.luau` | 1 Second | Stay for 1 second |
+| `Badge_5Second.server.luau` | 5 Seconds | Stay for 5 seconds |
+| `Badge_10Second.server.luau` | 10 Seconds | Stay for 10 seconds |
 
-│   │   │   ├── Badge_5Second.server.luau
+> ⚠️ **Important:** You need to open up the badge scripts inside `src/ServerScriptService/Badges/` and replace the placeholder `BADGE_ID` constants with your actual IDs from the Roblox Creator Dashboard, or they won't award anything.
 
-│   │   │   └── Badge_10Second.server.luau
+## 📊 Playtime Tracking
 
-│   │   └── Leaderboard/              # Playtime tracking & DataStores
+The `PlaytimeLeaderboard.server.luau` script handles player stats:
+* **DataStore:** `PlaytimeData_V1`
+* **Leaderstat:** `Playtime` (Tracks lifetime minutes)
+* **Save Logic:** Autosaves every 60 seconds and saves when a player leaves the server.
 
-│   │       └── PlaytimeLeaderboard.server.luau
+## 🚀 How to Run
 
-│   ├── StarterPlayer/
+1. Clone the repo.
+2. If you use Aftman, run `aftman install`.
+3. Start the Rojo server by running `rojo serve` in your terminal.
+4. Open your place file in Roblox Studio, open the Rojo plugin, and click **Connect**.
 
-│   └── ReplicatedStorage/
-
-├── assets/
-
-│   ├── models/                       # Map and geometry backups
-
-│   │   ├── Classic_House.rbxm
-
-│   │   ├── Parts.rbxm
-
-│   │   ├── walls.rbxm
-
-│   │   ├── Spawn_Location.rbxm
-
-│   │   └── Export.gltf
-
-│   └── audio/                        # Sound assets
-
-│       └── Sound.rbxm
-
-├── docs/                             # Design notes & changelogs
-
-├── default.project.json              # Rojo sync config
-
-└── .gitignore
-
-🚀 Setting Up (Rojo)Clone the repository:Bashgit clone https://github.com/Abdi-01/Badges-for-Absolutely-Everything.git
-
-cd Badges-for-Absolutely-Everything
-
-2. Install dependencies and start the Rojo server:
-3. 
-   ```bash
-   
-   aftman install
-   
-   rojo serve
-   
-Open Roblox Studio, open the Rojo plugin, and hit Connect (localhost:34872).🏅 Implemented BadgesScriptBadge NameRequirementWelcomeBadge.server.luauWelcomeJoin the gameBadge_1Second.server.luau1 SecondStay in-game for 1 secondBadge_5Second.server.luau5 SecondsStay in-game for 5 secondsBadge_10Second.server.luau10 SecondsStay in-game for 10 seconds⚠️ Note: You must replace the BADGE_ID constants in each script with your actual asset IDs from the Creator Dashboard for the rewards to fire.📊 Leaderboard & DataStorePlaytime tracking is handled by PlaytimeLeaderboard.server.luau:DataStore Key: PlaytimeData_V1Stat Name: Playtime (Tracks lifetime minutes)Save Interval: Autosaves every 60 seconds and triggers safely on PlayerRemoving.🗺️ Handling AssetsModel files (.rbxm) are version-controlled in the assets/ directory for backup purposes. Because Rojo doesn't sync physical instance changes back to disk automatically, any updates to the map geometry must be manually exported from Studio or inserted via the Asset Manager.
+*Note: Since Rojo doesn't sync physical 3D instances back to your local files automatically, map models in the `assets/` folder have to be inserted or updated manually via Studio.*
