@@ -20,7 +20,7 @@ A simple Roblox project managed with Rojo where players get badges for doing bas
 
 > ⚠️ **Important:** You need to open up the badge scripts inside `src/ServerScriptService/Badges/` and replace the placeholder `BADGE_ID` constants with your actual IDs from the Roblox Creator Dashboard, or they won't award anything.
 
-## 📊 Playtime Tracking
+## Playtime Tracking
 
 The `PlaytimeLeaderboard.server.luau` script handles player stats:
 * **DataStore:** `PlaytimeData_V1`
