@@ -1,6 +1,6 @@
-# 🎮 Roblox Game
+# 🎮 Badges-for-Absolutely-Everything
 
-A Roblox experience featuring playtime tracking, badges, and custom map assets.
+Dive into the world where literally everything earns you a badge! Badges for Absolutely Everything is the game designed to satisfy your craving for achievements. From the simplest actions to the most bizarre exploits, every moment counts, and every action is rewarded.
 
 ---
 
@@ -103,6 +103,3 @@ Model files (`.rbxm`) are stored under `assets/` and should be inserted into the
 
 ---
 
-## 📄 License
-
-MIT — feel free to use and adapt for your own games.
