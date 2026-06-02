@@ -4,6 +4,8 @@ A simple Roblox project managed with Rojo where players get badges for doing bas
 
 PLAY THE GAME HERE : 
                      https://www.roblox.com/games/98010957959094/Badges-for-Absolutely-Everything
+DEMO VIDEO URL:
+                 https://youtu.be/xOVthPjn0uo
 
 ## 📁 Project Structure
 
