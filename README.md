@@ -8,7 +8,7 @@ PLAY THE GAME HERE :
 DEMO VIDEO URL:
                  https://youtu.be/xOVthPjn0uo
 
-## 📁 Project Structure
+##  Project Structure
 
 * `src/ServerScriptService/Badges/` - Holds all individual server scripts for badge triggers.
 * `src/ServerScriptService/Leaderboard/` - Contains the playtime data saving system.
@@ -24,7 +24,7 @@ DEMO VIDEO URL:
 | `Badge_5Second.server.luau` | 5 Seconds | Stay for 5 seconds |
 | `Badge_10Second.server.luau` | 10 Seconds | Stay for 10 seconds |
 
-> ⚠️ **Important:** You need to open up the badge scripts inside `src/ServerScriptService/Badges/` and replace the placeholder `BADGE_ID` constants with your actual IDs from the Roblox Creator Dashboard, or they won't award anything.
+>  **Important:** You need to open up the badge scripts inside `src/ServerScriptService/Badges/` and replace the placeholder `BADGE_ID` constants with your actual IDs from the Roblox Creator Dashboard, or they won't award anything.
 
 ## Playtime Tracking
 
